@@ -38,7 +38,10 @@ print('*'*20)
 
 url = requests.get(input("Enter an iqiyi dash url: "), headers = header).content
 
-data = json.loads(url[38:-16])
+try:
+    data = json.loads()
+except:
+    data = json.loads(url[38:-16])
 
 m3u8 = next(filter(lambda x: 'm3u8' in x, data['data']['program']['video']))['m3u8']
 
