@@ -1,0 +1,13 @@
+/temp
+/videos
+__pycache__
+test.py
+logs/
+*.pyc
+Logs/
+Downloads/
+start.bat
+*.mkv
+*.mp4
+*.m3u8
+*.srt

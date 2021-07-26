@@ -60,7 +60,6 @@ for i in range(len(stl)):
 alang = data['data']['program']['audio'][0]['name']
 print('Downloading:', epname)
 os.system(f'dl "{epname}/file.m3u8" --saveName "{epname}" --workDir "."')
-print("Finished Downloading:", epname)
 sleep(5)
 mkvcmd = f'mkvmerge -q -o "{epname}.mkv" --language 0:und --default-track 0:yes --default-track 1:yes '
 mkvcmd += f'--language 0:zh --track-name 1:Mandarin "{epname}.mp4" ' if alang == 'Mandarin' else f'--language 0:ko --track-name 1:Korean "{epname}.mp4" '
