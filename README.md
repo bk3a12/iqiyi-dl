@@ -1,5 +1,11 @@
 ## iQIYI Video Downloader using dash link
 1. You need to get the dash link from iq/iqiyi from the browser's network tab.<br>
+```
+For VIP and unlocked episodes, you will need to grab the cookie from the dash link.
+Click on the dash entry and under 'Request Headers', find the 'cookie' section, right click > copy value.
+```
+[Example for Cookie Here](http://midi.moe/f/tgppe.png)
+
 ![Network Tab Dash Link](http://midi.moe/f/mrmpm.png)
 2. The script takes 3 main inputs
 ```
