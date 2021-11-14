@@ -75,7 +75,7 @@ for lang in subs:
 
     for audio, short in audios.items():
         if lang == audio:
-            mkvcmd += f'--language 0:{short} --track-name "0:{lang}" "{epname}/{lang}.srt" '
+            mkvcmd += f'--default-track 0:no --language 0:{short} --track-name "0:{lang}" "{epname}/{lang}.srt" '
 
 mkvcmd += f'--title "{epname}"'
 print("Merging Files...")
